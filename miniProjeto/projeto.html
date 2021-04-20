@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Mini Projeto Wendell</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .marcador {
+            background-color: rgb(97, 62, 143);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="row marcador">
+            <div class="col-md-4" style="height: 15vh">
+                <img src="img/TUTOR.png" class="img-fluid" alt="logo" style="width: 400px;">
+            </div>
+            <div class="col-md-4" style="height: 15vh">
+            </div>
+            <div class="col-md-4" style="height: 15vh">
+                <div class="dropdown text-right">
+                    <button type="button" class="btn btn-lg btn-danger dropdown-toggle mt-5"
+                        data-toggle="dropdown">Menu</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item marcador text-light " href="#tutorial">Tutorial</a>
+                        <a class="dropdown-item marcador text-light " href="#grid">GRID</a>
+                        <a class="dropdown-item marcador text-light " href="#texto">Classes de Texto</a>
+                        <a class="dropdown-item marcador text-light " href="#cor">Classes de Cores e Bordas</a>
+                        <a class="dropdown-item marcador text-light " href="#btns">Botões</a>
+                        <a class="dropdown-item marcador text-light " href="#inputs">Inputs</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="row text-center">
+            <div class="col-md-12 bg-light" style="height: 35vh">
+                <h1 class="display-1">Bootstrap</h1>
+                <h4> Neste tutorial, vamos abordar algumas funcionalidades desse framework para web e
+                    como fazer para incorporá-lo no seu projeto corretamente.</h4>
+                    
+                    <a class="btn btn-lg btn-danger mt-3" href="https://getbootstrap.com.br/docs/4.1/getting-started/download/"
+                    role="button">Download</a>
+            </div>
+        </div>
+        <div class="row marcador text-justify">
+            <div class="col-md-4 text-white" style="height: 55vh">
+                <h5 class="display-4">Passo 1:</h5><br>
+                <h4 id="tutorial">Primeiro os motivos para usar o Bootstrap:</h4><br>
+                <ol>
+                    <li>Bootstrap ocupa a segunda posição como a biblioteca JavaScript mais utilizada;</li>
+                    <li>O Bootstrap segue o conceito mobile-first;</li>
+                    <li>O padrão visual de estilização segue as tendências de design utilizadas no momento; </li>
+                    <li>Sua utilização elimina a necessidade de escrever muitas linhas de código e,
+                        ainda, contribui para reduzir o tamanho dos arquivos trafegados;</li>
+                    <li> E, por ser um framework de código aberto, o Bootstrap conta com uma comunidade ativa de
+                        desenvolvedores.</li>
+                </ol>
+            </div>
+            <div class="col-md-4 text-white" style="height: 55vh">
+                <h5 class="display-4">Passo 2:</h5><br>
+                <h4>Agora precisa baixar o Bootstrap:</h4><br>
+                <p>Existem diferentes formas de baixar o framework. Uma delas é fazer o download da versão compilada
+                    por meio da página do Bootstrap.</p>
+                <p> Há também a opção de baixar o
+                    código-fonte do framework.</p>
+                <p>E quem não quiser baixar os arquivos pode ter acesso ao framework sem a
+                    necessidade de instalá-los no
+                    servidor. Para isso, é só utilizar os links para acessar o<a
+                        href="https://getbootstrap.com.br/docs/4.1/getting-started/introduction/">
+                        BootstrapCDN</a> e, dessa forma, adicionar as
+                    referências
+                    para os arquivos necessários para a sua utilização.</p>
+            </div>
+            <div class="col-md-4 text-white" style="height: 55vh">
+                <h5 class="display-4">Passo 3:</h5><br>
+                <h4>Pronto, já pode usar!</h4><br>
+                <p>Adicione os arquivos “bootstrap.min.css” e “bootstrap.min.js” nas pastas correspondentes a eles
+                    dentro do seu site.</p>
+                <p>Depois, é só chamar o CSS e o JS dentro da tag do HTML. </p>
+                </p> É importante lembrar que este framework
+                acessa a biblioteca jQuery para ativar o
+                comportamento de seus plugins. Portanto, lembre-se de inseri-lo em sua página para que tudo
+                funcione perfeitamente.
+                </p>
+            </div>
+        </div>
+        <div class="row text-center ml-5">
+            <div class="col-md-3 bg-light" style="height: 35vh">
+                <br>
+                <div class="card border-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header font-italic">1º Dica:</div>
+                    <div class="card-body text-primary">
+                        <h5 class="card-title">CARDS!</h5>
+                        <p class="card-text">Você pode fazer cards de forma fácil como este. Usando algumas clasess:
+                            .card, .card-body, .card-text, .card-title.
+                            <a href="https://getbootstrap.com.br/docs/4.1/components/card/"
+                                class="badge badge-primary">+ Info</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-3 bg-light" style="height: 35vh">
+                <br>
+                <div class="card border-danger mb-3" style="max-width: 18rem;">
+                    <div class="card-header font-italic">2º Dica:</div>
+                    <div class="card-body text-danger">
+                        <h5 class="card-title">FORMULÁRIOS!</h5>
+                        <p class="card-text">
+                            Use a classe .form-inline para mostrar vários labels, controles e botões, em uma única
+                            linha.
+                            <a href="https://getbootstrap.com.br/docs/4.1/components/forms/"
+                                class="badge badge-danger">+ Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 bg-light" style="height: 35vh">
+                <br>
+                <div class="card border-warning mb-3" style="max-width: 18rem;">
+                    <div class="card-header font-italic">3º Dica:</div>
+                    <div class="card-body text-warning">
+                        <h5 class="card-title">TABELAS!</h5>
+                        <p class="card-text">
+                            Com o Bootstrap, podemos estar criando tabelas com padrões pré definidos. Usando a
+                            class="table".
+                            <a href="https://getbootstrap.com.br/docs/4.1/content/tables/" class="badge badge-warning">+
+                                Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 bg-light" style="height: 35vh">
+                <br>
+                <div class="card border-success mb-3" style="max-width: 18rem;">
+                    <div class="card-header font-italic">4º Dica:</div>
+                    <div class="card-body text-success">
+                        <h5 class="card-title">IMAGENS!</h5>
+                        <p class="card-text">Use as classes .figure, .figure-img e .figure-caption.
+                            Use .img-fluid para fazer com que
+                            ela seja responsiva.
+                            <a href="https://getbootstrap.com.br/docs/4.1/content/images/" class="badge badge-success">+
+                                Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row marcador text-white text-justify">
+            <div class="col-md-6" style="height:55vh">
+                <h5 id="grid" class="display-4">Layout de Grid responsivo</h5><br>
+                <p>Bom, basicamente, o Bootstrap funciona no sistema de grids, com linhas e colunas.
+                    Cada linha pode possuir até 12 colunas. E, essas linhas, devem estar dentro de containers e as
+                    colunas dentro de linhas.</p>
+                <p>Row – No Bootstrap as linhas são identificadas por div’s com a classe ‘row’. / Col – As colunas são identificadas por div’s com classes ‘col’ e suas variações;</p>
+                <p> Containers – As linhas devem estar dentro de containers que, também, são div, representado pelas
+                    classes: ‘container’ e ‘container-fluid’;</p>
+                <p> O Bootstrap possui 5 breakpoins responsivos, ou seja, vc pode modelar o layout considerando até 5
+                    tamanhos de telas diferentes (Extra-small/Small/Medium/Large/Extra-large).</p>
+              
+            </div>
+            <div class="col-md-6 text-center" style="height:50vh">
+                <figure class="figure">
+                    <img src="img/EXGRID.png" class="img-fluid mt-5" alt="codigo grid">
+                    <figcaption class="figure-caption text-right text-white"><a
+                            href="https://getbootstrap.com.br/docs/4.1/layout/grid/">Bootstrap: </a> código de GRID.
+                    </figcaption>
+                </figure>
+                <br>
+                <cite>Esta página é um exmeplo de uso de Grids!</cite>
+            </div>
+        </div>
+        <div class="row text-justify">
+
+            <div class="col-md-4 bg-light" style="height: 60vh">
+                <h5 class="display-4">Margin-Padding</h5>
+                <p>Servem para controlar como elementos e componentes são
+                    espaçados e dimensionados. Bootstrap 4 possui uma escala de cinco níveis para utilitários de
+                    espaçamento, baseado no valor padrão 1rem da variável $spacer.</p>
+                <p> Escolha valores para todas viewports
+                    (.mr-3, no caso margin-right: 1rem) ou variações responsivas para mirar em viewports específicas
+                    (.mr-md-3 para margin-right: 1rem em viewports do breakpoint md).</p>
+                <div class="alert alert-warning" role="alert">
+                    Para mais informações <a href="https://getbootstrap.com.br/docs/4.1/utilities/spacing/"
+                        class="alert-link"> confira a
+                        documentação</a>.
+                </div>
+            </div>
+            <div class="col-md-4 bg-light" style="height: 60vh">
+                <h5 id="texto" class="display-4">Alinhamento</h5>
+                <ul class="list-group">
+                    <li style="height: 40px;" class="list-group-item">Classes de alinhamento:</li>
+                    <li style="height: 40px;" class="list-group-item list-group-item-primary">class="text-justify";</li>
+                    <li style="height: 40px;" class="list-group-item list-group-item-secondary">class="text-left"
+                        (center, right);</li>
+                    <li style="height: 40px;" class="list-group-item list-group-item-success">class="text-sm-right" (md,
+                        lg, xl);</li>
+                    <li style="height: 40px;" class="list-group-item list-group-item-danger">class="text-nowrap
+                        bd-highlight";</li>
+                    <li style="height: 40px;" class="list-group-item list-group-item-warning">class="text-lowercase"
+                        (uppercase,capitalize);</li>
+                    <li style="height: 40px;" class="list-group-item list-group-item-info">class="font-weight-bold"
+                        (normal, light;)</li>
+                    <li style="height: 40px;" class="list-group-item list-group-item-light">class="font-italic";</li>
+                    <li style="height: 40px;" class="list-group-item list-group-item-dark">class="text-monospace";</li>
+                    <li style="height: 40px;" class="list-group-item list-group-item-danger">class="align-baseline (top,
+                        middle, bottom)".</li>
+                </ul>
+            </div>
+            <div class="col-md-4 bg-light" style="height: 60vh">
+                <h5 id="cor" class="display-4">Cores-Bordas</h5>
+                <p>Transmita mensagens através de cores e estilize rapidamente bordas, com as classes:</p>
+                <ul>
+                    <li>class="text-primary" (secondary, success, danger warning, info, light, dark, body, muted, white,
+                        black);</li>
+                    <li>class="bg-primary" (secondary, success, danger, warning, info, light, dark, white, transparent);
+                    </li>
+                    <li>class="border" (top, right, bottom, left);</li>
+                    <li>class="border border-primary" (secondary, success, danger warning, info, light, dark, white).
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row marcador text-center">
+            <div class="col-md-6 text-white" style="height: 60vh">
+                <h5 id="btns" class="display-4">Buttons</h5><br>
+                <p>Use os botões Bootstrap personalizados para ações em formulários, diálogos e outras coisas.
+                    Lembrando que esse componente tem suporte a escolha de tamanhos, estados e muito mais. Exemplos:</p>
+                <ul class="text-left">
+                    <li>class="btn btn-primary" (secondary, success, danger warning, info, light, dark, link);</li>
+                    <li>class="btn btn-outline-primary (secondary, success, danger, warning, info, light, dark);
+                    </li>
+                    <li>class="btn btn-primary btn-lg" (sm);</li>
+                    <li>class="btn btn-primary btn-lg active" (ou disabled).</li>
+                </ul>
+                <br><br>
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-dark">Dark</button>
+                <button type="button" class="btn btn-link">Link</button>
+                <figcaption class="figure-caption text-center text-white"><a
+                        href="https://getbootstrap.com.br/docs/4.1/components/buttons/">Bootstrap: </a> Exemplo de
+                    botões.
+                </figcaption>
+            </div>
+            <div class="col-md-6 text-white" style="height: 60vh">
+                <h5 class="display-4">Dropdowns</h5><br>
+                <p>Qualquer .btn pode se transformar em um dropdown, com algumas adições na marcação HTML.
+                    Aqui está como você pode fazê-los funcionar, usando buttons:</p>
+                <figure class="figure">
+                    <img src="img/drop.png" class="figure-img img-fluid rounded" alt="codigo grid">
+                </figure>
+
+                <p>O melhor é que você pode fazer isso com qualquer variante de botão!</p>
+                <cite>O menu desta página é um exemplo
+                    de botão dropdown.</cite>
+            </div>
+        </div>
+        <div class="row text-justify">
+            <div class="col-md-6 bg-light" style="height: 60vh">
+                <h5 id="inputs" class="display-4 text-center">Inputs</h5>
+                <p>Alguns exemplos do uso de inputs:</p>
+                <ul>
+                    <li>Coloque um add-on ou botão em qualquer um dos lados de um input;</li>
+                    <li>Use as classes de dimensionamento de formulário no .input-group e conteúdos dentro dele vão,
+                        automaticamente, redimensionar;</li>
+                    <li>Coloque qualquer checkbox ou radio dentro do addon de grupo de input, invés de texto;</li>
+                    <li>Apesar de múltiplos inputs serem suportados (visualmente), estilos de validação só estão
+                        disponíveis para grupos de input com um único input;</li>
+                    <li>Múltiplos add-ons são suportados e podem ser misturados com input checkbox e radio;</li>
+                    <li>Input de arquivo personalizado;</li>
+                    <li>Botões com dropdowns, seguimentados, formulários, select, entre outros.</li>
+                </ul>
+            </div>
+            <div class="col-md-6 bg-light" style="height: 60vh">
+                <br><br>
+                <p>Facilmente, extenda os controles de formulário com textos, botões, selects personalizados, etc.</p>
+                <p>Algumas clases:</p>
+                <ul>
+                    <li>class="input-group";</li>
+                    <li>class="input-group-prepend" (ou append);</li>
+                    <li>class="input-group-text".</li>
+                </ul>
+                <figure class="figure">
+                    <img src="img/inputs.png" class="img-fluid" alt="codigo input">
+                    <figcaption class="figure-caption text-right"><a
+                            href="https://getbootstrap.com.br/docs/4.1/components/input-group/">Bootstrap: </a>
+                        código input.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="row marcador text-center">
+            <div class="col-md-12 text-white" style="height: 30vh">
+                <br>
+                <h5 class="display-4">Ok! É só isso? Não!</h5><br>
+                <p> Além de tudo que citamos, é possível fazer muito mais. O Bootstrap é um framework bem completo e
+                    extremamente poderoso. Com ele você é capaz de criar páginas modernas completas. Portanto
+                    recomendamos a leitura da documentação para
+                    o aprendizado
+                    assim como ver alguns exemplos que estão
+                    disponibilizados.</p>
+                <a class="btn btn-sm btn-primary" href="https://getbootstrap.com.br/docs/4.1/getting-started/introduction/"
+                    role="button">Documentação</a>
+            </div>
+        </div>
+        <div class="row marcador text-white">
+            <div class="col-md-12" style="height: 15vh">
+                <blockquote class="blockquote text-right">
+                    <p>Bootstrap Tutorial</p>
+                    <footer class="blockquote-footer text-white">BILL GATES <cite title="Source Title text-white">“A
+                            razão pela qual vemos código aberto por todo lado é porque nós entramos e dissemos que
+                            haveria uma plataforma idêntica em milhões e milhões de máquinas.”</cite></footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
