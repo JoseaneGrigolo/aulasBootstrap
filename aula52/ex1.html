@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <title>Bootstrap - botões</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--Container -->
+
+
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+            <!--Logo-->
+            <a class="navbar-brand" href="">Logomarca</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao3">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Navegação-->
+            <div id="navegacao3" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Sobre</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Serviços</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="">Serviço 1</a>
+                            <a class="dropdown-item" href="">Serviço 2</a>
+                            <a class="dropdown-item" href="">Serviço 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Contato</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <br><br>
+
+        <div class="col-lg-4 m-auto">
+            <!--col-sm8 -->
+            <div id="carousel-legenda" class="carousel slide" data-ride="carousel">
+                <!--Indicadores-->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-legenda" data-slide-to="0"></li>
+                    <li data-target="#carousel-legenda" data-slide-to="1"></li>
+                    <li data-target="#carousel-legenda" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/imagem1.jpeg" class="img-fluid">
+                        <div class="carousel-caption">
+                            <h2>texto 1</h2>
+                            <p>Aqui vai um texto maior para exemplificar a utilização
+                                do Carousel com legendas
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/imagem2.jpeg" class="img-fluid">
+                        <div class="carousel-caption">
+                            <h2>texto 2</h2>
+                            <p>Aqui vai um texto maior para exemplificar a utilização
+                                do Carousel com legendas
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/imagem3.jpeg" class="img-fluid">
+                        <div class="carousel-caption">
+                            <h2>texto 3</h2>
+                            <p>Aqui vai um texto maior para exemplificar a utilização
+                                do Carousel com legendas
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--Fim Div carousel-inner-->
+                <!--Controles-->
+                <a href="#carousel-legenda" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#carousel-legenda" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            <!--Fim Div carousel-slide-->
+        </div>
+        <!--/col-sm8 -->
+
+        <br><br>
+        <form class="form-inline justify-content-center">
+
+            <label class="sr-only">Nome</label>
+            <input class="form-control mr-sm-2 mb-2" type="text" placeholder="Nome">
+            <label class="sr-only">E-mail</label>
+            <div class="input-group mb-2 mr-sm-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">@</div>
+                </div>
+                <input class="form-control" type="email" placeholder="E-mail">
+            </div>
+
+            <button class="btn btn-primary mb-2" type="submit">Enviar</button>
+
+        </form>
+
+        <div class="row"></div>
+            <div class="col-md-12" style="height: 15vh">
+                <blockquote class="blockquote text-right">
+                    <p>Exercico Bismark</p>
+                    <footer class="blockquote-footer">BILL GATES <cite title="Source Title">“A
+                            razão pela qual vemos código aberto por todo lado é porque nós entramos e dissemos que
+                            haveria uma plataforma idêntica em milhões e milhões de máquinas.”</cite></footer>
+                </blockquote>
+            </div>
+        </div>
+    
+
+
+
+    </div>
+    <!--/Container -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
